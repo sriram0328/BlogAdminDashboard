@@ -190,15 +190,8 @@ Navigate to `http://localhost:5173` to view the app.
 
 ##  Deployment
 
-Deployed in Vercel, Link : 
+Deployed in Vercel, Link : https://blog-admin-dashboard-delta.vercel.app/
 
-```bash
-npm run build
-
-```
-
-
----
 
 ##  License
 
