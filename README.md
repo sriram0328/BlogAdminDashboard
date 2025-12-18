@@ -1,13 +1,13 @@
 
-# 📋 Blog Admin Dashboard
+#  Blog Admin Dashboard
 
 This project is a complete blog management system featuring a clean, responsive admin interface. It implements full CRUD operations, advanced filtering, persistent pagination, image handling, and a soft-delete mechanism with auto-purge capabilities.
 
 ---
 
-## ✨ Features Implemented
+##  Features Implemented
 
-### Core Features ✅
+### Core Features 
 * **Responsive Admin Layout:** Custom-built Sidebar (mobile drawer + desktop static), sticky Navbar with glassmorphism, and a responsive main content area.
 * **CRUD Operations:** Fully functional Create, Read, Update, and Delete flows for blog posts.
 * **Blog Fields:** Support for Title, Description, Category, Author, Cover Image, Publish Date, and Status.
@@ -16,7 +16,7 @@ This project is a complete blog management system featuring a clean, responsive 
 * **Image Handling:** Drag-and-drop support, JPG/PNG validation, max 1MB size enforcement, and instant preview.
 * **Dashboard Overview:** Visual statistics for Total Posts, Published, and Drafts, plus a "Recent Activity" feed.
 
-### Medium Brain Task: Soft Delete + Auto Purge ✅
+### Medium Brain Task: Soft Delete + Auto Purge 
 * **Implementation:** Located in `src/hooks/useBlogs.js`.
 * **Logic:** Blogs marked as deleted are hidden from the main view but stored with a `deletedAt` timestamp.
 * **Auto-purge:** On initialization, the app checks for blogs deleted more than 7 days ago and permanently removes them from `localStorage`.
@@ -27,14 +27,14 @@ This project is a complete blog management system featuring a clean, responsive 
     );
     ```
 
-### Quick Logic Tasks ✅
+### Quick Logic Tasks 
 * **Persistent State:** Pagination page number and "rows per page" preferences are saved to `localStorage`.
 * **Form Safety:** "Save Blog" button is disabled until changes are detected.
 * **Navigation Safety:** Browser warning prompt if trying to close/reload the page with unsaved form changes.
 
 ---
 
-## 🏗️ Folder Architecture
+##  Folder Architecture
 
 ```bash
 blog-admin-dashboard/
@@ -80,7 +80,7 @@ blog-admin-dashboard/
 
 ---
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 
@@ -116,7 +116,7 @@ Navigate to `http://localhost:5173` to view the app.
 
 ---
 
-## 🎯 Feature Demonstrations
+##  Feature Demonstrations
 
 ### 1. Dashboard
 
@@ -158,10 +158,9 @@ Navigate to `http://localhost:5173` to view the app.
 
 ---
 
-## 🎨 UI/UX Highlights
-
-* **Glassmorphism Navbar:** Sticky top navbar with backdrop blur effect.
+##  UI/UX Highlights
 * **Mobile-First Design:** * Hidden sidebar with hamburger menu.
+* Sticky top navbar with backdrop blur effect.
 * Tables transform into card layouts on small screens.
 * Touch-friendly buttons and inputs (min-height 44px).
 
@@ -174,13 +173,12 @@ Navigate to `http://localhost:5173` to view the app.
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Image Validation
 
-1. Try uploading a `.gif` file → Alert: "Only JPG or PNG allowed".
-2. Try uploading a file > 1MB → Alert: "Image must be under 1MB".
-3. Upload a valid JPG → Preview appears instantly.
+1. When clicked on Upload your system will fetch only the jpg & png's from your system [So you cant upload other files other than jpg/png]
+2. Upload a valid JPG → Preview appears instantly.
 
 ### Soft Delete & Recovery
 
@@ -190,20 +188,19 @@ Navigate to `http://localhost:5173` to view the app.
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
-To build for production:
+Deployed in Vercel, Link : 
 
 ```bash
 npm run build
 
 ```
 
-The output will be in the `dist/` folder, ready to be deployed to Vercel, Netlify, or GitHub Pages.
 
 ---
 
-## 📝 License
+##  License
 
 This project is open-source and available for personal and educational use.
 
