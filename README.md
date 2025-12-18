@@ -1,6 +1,4 @@
-Here is the updated and detailed `README.md` file, tailored to match your specific project structure and the features we implemented.
 
-```markdown
 # 📋 Blog Admin Dashboard
 
 This project is a complete blog management system featuring a clean, responsive admin interface. It implements full CRUD operations, advanced filtering, persistent pagination, image handling, and a soft-delete mechanism with auto-purge capabilities.
